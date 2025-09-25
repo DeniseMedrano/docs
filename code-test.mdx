@@ -1,4 +1,39 @@
 ---
-title: "Code Test"
+title: "Descripción del Script"
 description: "Descripcion de código generado por AI"
 ---
+
+## Descripción
+
+Este script implementa un juego simple de adivinanzas en la consola de Node.js. El juego consiste en adivinar una palabra secreta con la ayuda de pistas que se van revelando progresivamente con cada intento fallido.
+
+### Funcionalidad
+
+- El jugador tiene un número limitado de intentos para adivinar la palabra secreta (igual al número de pistas disponibles + 1).
+- En cada intento, se muestra una pista nueva hasta agotar todas las pistas disponibles.
+- La respuesta del usuario se compara con la palabra secreta ignorando mayúsculas/minúsculas y espacios.
+- El juego termina cuando el usuario adivina correctamente la palabra o agota todos sus intentos.
+
+### Componentes principales
+
+- **readline:** Módulo de Node.js utilizado para crear una interfaz de línea de comandos interactiva.
+- **secretWord:** Variable que almacena la palabra que el jugador debe adivinar.
+- **hints:** Array con las pistas que se mostrarán secuencialmente.
+- **attempts:** Contador que registra el número de intentos realizados.
+- **askGuess():** Función recursiva que maneja la lógica principal del juego.
+
+### Cómo ejecutar
+
+Para ejecutar este script, necesitas tener Node.js instalado en tu sistema. Luego puedes ejecutarlo con el siguiente comando:
+
+```
+node clue.play.js
+
+```
+
+### Posibles mejoras
+
+- Añadir un sistema de puntuación basado en el número de intentos utilizados.
+- Implementar múltiples palabras secretas seleccionadas aleatoriamente.
+- Permitir configurar la dificultad ajustando el número de intentos disponibles.
+- Añadir un temporizador para aumentar la presión.
